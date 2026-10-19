@@ -20,10 +20,10 @@ function Header() {
   const location = useLocation()
   useEffect(() => setOpen(false), [location.pathname])
   return <header className="site-header">
-    <Link className="wordmark" to="/" aria-label={`${restaurant.name}, accueil`}>{restaurant.name}</Link>
+    <span className="wordmark">{restaurant.name}</span>
     <button className="mobile-toggle" aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <MenuIcon />}</button>
     <nav className={open ? 'main-nav is-open' : 'main-nav'} aria-label="Navigation principale">
-      <NavLink to="/histoire">Histoire</NavLink><NavLink to="/menu">Menu</NavLink><NavLink to="/galerie">Galerie</NavLink><NavLink to="/contact">Contact</NavLink>
+      <NavLink to="/" end>Accueil</NavLink><NavLink to="/histoire">Histoire</NavLink><NavLink to="/menu">Menu</NavLink><NavLink to="/galerie">Galerie</NavLink><NavLink to="/contact">Contact</NavLink>
       <Link className="button button-dark nav-book" to="/reservation">Réserver une table <ArrowRight size={15} /></Link>
     </nav>
   </header>
@@ -31,7 +31,7 @@ function Header() {
 
 function Footer() {
   return <footer className="site-footer">
-    <div className="footer-top"><div><Link className="footer-brand" to="/">{restaurant.name}</Link><p>{restaurant.tagline}</p></div><div className="footer-links"><div><span>Explorer</span><Link to="/histoire">Notre histoire</Link><Link to="/menu">Le menu</Link><Link to="/galerie">La galerie</Link></div><div><span>Nous trouver</span><p>{restaurant.address}</p>{restaurant.phone && <a href={`tel:${restaurant.phone}`}>{restaurant.phone}</a>}{restaurant.email && <a href={`mailto:${restaurant.email}`}>{restaurant.email}</a>}</div><div><span>Informations</span><Link to="/contact">Contact</Link><Link to="/mentions-legales">Mentions légales</Link><Link to="/confidentialite">Confidentialité</Link></div></div></div>
+    <div className="footer-top"><div><span className="footer-brand">{restaurant.name}</span><p>{restaurant.tagline}</p></div><div className="footer-links"><div><span>Explorer</span><Link to="/histoire">Notre histoire</Link><Link to="/menu">Le menu</Link><Link to="/galerie">La galerie</Link></div><div><span>Nous trouver</span><p>{restaurant.address}</p>{restaurant.phone && <a href={`tel:${restaurant.phone}`}>{restaurant.phone}</a>}{restaurant.email && <a href={`mailto:${restaurant.email}`}>{restaurant.email}</a>}</div><div><span>Informations</span><Link to="/contact">Contact</Link><Link to="/mentions-legales">Mentions légales</Link><Link to="/confidentialite">Confidentialité</Link></div></div></div>
     <div className="footer-bottom"><span>© {new Date().getFullYear()} Tsarakaly · Projet de démonstration</span><span>L’art de savourer l’instant.</span></div>
     <p className="photo-credits">Photos d’ambiance via Picsum / Unsplash : <a href="https://unsplash.com/photos/DEdM9Vs6s8w" target="_blank" rel="noreferrer">Breather</a>, <a href="https://unsplash.com/photos/JYFmYif4n70" target="_blank" rel="noreferrer">Dominik Martin</a>, <a href="https://unsplash.com/photos/hv1MrBzGGNY" target="_blank" rel="noreferrer">Webvilla</a>, <a href="https://unsplash.com/photos/hGO27G5tZJ8" target="_blank" rel="noreferrer">Vee O</a>, <a href="https://unsplash.com/photos/lQy6mHZ7fYk" target="_blank" rel="noreferrer">Monstruo Estudio</a>, <a href="https://unsplash.com/photos/pJILiyPdrXI" target="_blank" rel="noreferrer">Ben Moore</a>, <a href="https://unsplash.com/photos/TYIzeCiZ_60" target="_blank" rel="noreferrer">Karl Fredrickson</a>, <a href="https://unsplash.com/photos/NYxxuBSQzp4" target="_blank" rel="noreferrer">Martin Wessely</a>. Ces images illustrent l’ambiance et ne montrent pas les plats ou les espaces réels du restaurant Tsarakaly.</p>
   </footer>

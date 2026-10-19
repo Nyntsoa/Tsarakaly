@@ -28,6 +28,9 @@
 .photo-credits{font-size:13px;line-height:1.6;color:#d1d0c8;max-width:110ch;margin:18px 0 0}.photo-credits a{text-decoration:underline;text-underline-offset:2px}
 @media (max-width: 560px){p:not(.photo-credits){font-size:16px}.hero-bottom>p{font-size:18px}}
 
+.site-header .wordmark{position:absolute;left:50%;transform:translateX(-50%);max-width:60vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:clamp(18px,var(--brand-desktop-size),34px)}
+@media (max-width:800px){.site-header .wordmark{max-width:calc(100% - 100px);font-size:clamp(18px,var(--brand-mobile-size),30px)}.mobile-toggle{margin-left:auto}}
+
 /* Photo treatment: softer frames and a more editorial rhythm. */
 :root{--photo-radius:22px}
 .hero-image,.preview-grid>a,.gallery-item{border-radius:var(--photo-radius)}

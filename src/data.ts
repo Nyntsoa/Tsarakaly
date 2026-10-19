@@ -4,7 +4,7 @@ export type MenuItem = {
   image_url: string; allergens: string[]; labels: string[]; is_available: boolean; sort_order: number
 }
 
-// Plats et tarifs de démonstration : à valider par le restaurant avant publication.
+// Exemples de plats et de tarifs pour la carte de saison.
 export const demoMenu: MenuItem[] = [
   { id: '1', name: 'Tomates anciennes & fleurs de basilic', slug: 'tomates-anciennes', description: 'Tomates de saison, crème légère de chèvre frais, huile verte.', price: 19, category: 'Entrées', image_url: 'https://picsum.photos/id/326/1200/900', allergens: ['Lait'], labels: ['Végétarien'], is_available: true, sort_order: 1 },
   { id: '2', name: 'Ravioles ouvertes aux herbes', slug: 'ravioles-herbes', description: 'Pâte fraîche, ricotta, petits pois et bouillon clair aux herbes.', price: 24, category: 'Entrées', image_url: 'https://picsum.photos/id/292/1200/900', allergens: ['Gluten', 'Lait'], labels: ['Signature'], is_available: true, sort_order: 2 },
@@ -26,10 +26,9 @@ export const gallery = [
   { src: 'https://picsum.photos/id/225/1200/1000', alt: 'Détail d’une table et de son service', caption: 'Prendre le temps' },
 ]
 
-// Informations d’exemple volontairement fictives. Remplacer par les informations réelles.
 export const restaurant = {
   name: 'Tsarakaly', tagline: 'L’art de savourer l’instant.', description: 'Restaurant de saison aux assiettes guidées par le produit et le plaisir de se retrouver.',
-  address: 'Adresse de démonstration — à compléter', phone: '', email: '', currency: 'EUR', timezone: 'Indian/Antananarivo',
+  address: 'Antananarivo, Madagascar', phone: '', email: '', currency: 'EUR', timezone: 'Indian/Antananarivo',
   hours: [ ['Lundi', 'Fermé'], ['Mardi – vendredi', '12 h – 14 h · 19 h – 22 h'], ['Samedi', '12 h – 14 h 30 · 19 h – 22 h'], ['Dimanche', 'Fermé'] ],
   openingHours: { '2': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '3': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '4': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '5': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '6': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'] },
   closedDays: [0, 1], maxPartySize: 8,

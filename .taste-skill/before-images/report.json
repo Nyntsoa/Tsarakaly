@@ -1,0 +1,1701 @@
+{
+ "url": "http://127.0.0.1:5173/",
+ "at": "2026-10-19T08:36:09.639Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.65,
+    0.41,
+    0.87,
+    1,
+    0.65,
+    0.77,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6425,
+     "screens": 7.1,
+     "words": 355,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 9,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "1200",
+      "1400",
+      "900",
+      "900",
+      "900",
+      "1100",
+      "1100",
+      "1000"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ÉCLAT",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 351.4,
+     "vw": 24.4,
+     "font": "Cormorant Garamond",
+     "weight": 500,
+     "tracking": -0.075,
+     "leading": 0.73,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.65,
+     "top": 336,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "ÉCLAT",
+     "words": 1,
+     "lines": 1,
+     "size": 351.4,
+     "font": "Cormorant Garamond"
+    },
+    "headings": [
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.06,
+      "top": 19,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 351.4,
+      "vw": 24.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.075,
+      "leading": 0.73,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 336,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Une cuisine qui raconte une histoire.",
+      "words": 6,
+      "chars": 37,
+      "lines": 2,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 1287,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "La sélection du moment",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2092,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tomates anciennes & fleurs de basilic",
+      "words": 6,
+      "chars": 37,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 2657,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Poisson du jour, fenouil confit",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.28,
+      "top": 2657,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Ravioles ouvertes aux herbes",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.28,
+      "top": 2745,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Le plaisir de ralentir.",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 64.8,
+      "vw": 4.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 3268,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Autour de la table",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 3883,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Votre prochaine belle table vous attend.",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 5084,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nous serons heureux de vous accueillir.",
+      "words": 6,
+      "chars": 39,
+      "lines": 2,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 5596,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.07,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 5977,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.86,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.14,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      16,
+      18,
+      22,
+      29,
+      34,
+      58,
+      63,
+      65,
+      216,
+      351
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 66,
+     "max": {
+      "size": 351.4,
+      "vw": 24.4,
+      "font": "Cormorant Garamond",
+      "text": "ÉCLAT"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f5f0e7",
+     "bodyBgHsl": {
+      "h": 39,
+      "s": 0.41,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#a9a18e",
+       "top": 156,
+       "hsl": {
+        "h": 42,
+        "s": 0.14,
+        "l": 0.61
+       }
+      },
+      {
+       "color": "#fffcf6",
+       "top": 1948,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#26382d",
+       "top": 3119,
+       "hsl": {
+        "h": 143,
+        "s": 0.19,
+        "l": 0.18
+       }
+      },
+      {
+       "color": "#f5f0e7",
+       "top": 3739,
+       "hsl": {
+        "h": 39,
+        "s": 0.41,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#d9d4c9",
+       "top": 4000,
+       "hsl": {
+        "h": 41,
+        "s": 0.17,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#b99a62",
+       "top": 4915,
+       "hsl": {
+        "h": 39,
+        "s": 0.38,
+        "l": 0.55
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#171914",
+       "share": 0.29
+      },
+      {
+       "color": "#d1d0c8",
+       "share": 0.14
+      },
+      {
+       "color": "#77766f",
+       "share": 0.09
+      },
+      {
+       "color": "#55564e",
+       "share": 0.09
+      },
+      {
+       "color": "#fffcf6",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#26382d",
+      "hsl": {
+       "h": 143,
+       "s": 0.19,
+       "l": 0.18
+      },
+      "fg": "#fffcf6"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Aller au contenu",
+      "Réserver une table",
+      "Découvrir le menu",
+      "Réserver une table"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 9,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.69
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "dm sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6425,
+    "margins": {
+     "left": 60,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 88,
+      "height": 812,
+      "words": 27,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "ÉCLAT",
+       "size": 351,
+       "tag": "h1"
+      },
+      "left": 38,
+      "right": 38,
+      "textLeft": 60,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#histoire.intro-section.section-pad",
+      "tag": "section",
+      "top": 900,
+      "height": 1048,
+      "words": 35,
+      "media": 1,
+      "middle": 144,
+      "heading": {
+       "text": "Une cuisine qui raconte une histoire.",
+       "size": 63,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 165,
+      "textLeft": 754,
+      "textRight": 165,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.selection-section.section-pad",
+      "tag": "section",
+      "top": 1948,
+      "height": 1171,
+      "words": 90,
+      "media": 3,
+      "middle": 43,
+      "heading": {
+       "text": "La sélection du moment",
+       "size": 63,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 94,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.experience-section",
+      "tag": "section",
+      "top": 3119,
+      "height": 620,
+      "words": 30,
+      "media": 1,
+      "middle": 115,
+      "heading": {
+       "text": "Le plaisir de ralentir.",
+       "size": 65,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 124,
+      "textLeft": 907,
+      "textRight": 124,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.gallery-preview.section-pad",
+      "tag": "section",
+      "top": 3739,
+      "height": 1176,
+      "words": 32,
+      "media": 3,
+      "middle": 18,
+      "heading": {
+       "text": "Autour de la table",
+       "size": 63,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 147,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reservation-banner",
+      "tag": "section",
+      "top": 4915,
+      "height": 518,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Votre prochaine belle table vous attend.",
+       "size": 63,
+       "tag": "h2"
+      },
+      "left": 481,
+      "right": 481,
+      "textLeft": 481,
+      "textRight": 481,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.practical.section-pad",
+      "tag": "section",
+      "top": 5434,
+      "height": 518,
+      "words": 57,
+      "media": 0,
+      "middle": 148,
+      "heading": {
+       "text": "Nous serons heureux",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 69,
+      "textLeft": 60,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 5952,
+      "height": 473,
+      "words": 72,
+      "media": 0,
+      "middle": 67,
+      "heading": {
+       "text": "ÉCLAT",
+       "size": 216,
+       "tag": "a"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1804,
+      "height": 280
+     },
+     {
+      "top": 4764,
+      "height": 312
+     },
+     {
+      "top": 5276,
+      "height": 300
+     }
+    ],
+    "h1s": [
+     {
+      "text": "ÉCLAT",
+      "size": 351,
+      "top": 336,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 60,
+      "n": 7
+     },
+     {
+      "x": 517,
+      "n": 2
+     },
+     {
+      "x": 754,
+      "n": 2
+     },
+     {
+      "x": 907,
+      "n": 2
+     },
+     {
+      "x": 253,
+      "n": 1
+     },
+     {
+      "x": 630,
+      "n": 1
+     },
+     {
+      "x": 971,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 16,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.03,
+    "voidBox": {
+     "x": 420,
+     "y": 840,
+     "w": 600,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.7,
+    0.66,
+    1,
+    1,
+    0.92,
+    0.72,
+    0.99,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 15,
+    "css": 15,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6861,
+     "screens": 8.1,
+     "words": 346,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 9,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "1200",
+      "1400",
+      "900",
+      "900",
+      "900",
+      "1100",
+      "1100",
+      "1000"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ÉCLAT",
+     "words": 1,
+     "chars": 5,
+     "lines": 1,
+     "size": 93.6,
+     "vw": 24,
+     "font": "Cormorant Garamond",
+     "weight": 500,
+     "tracking": -0.09,
+     "leading": 0.73,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.62,
+     "top": 311,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "ÉCLAT",
+     "words": 1,
+     "lines": 1,
+     "size": 93.6,
+     "font": "Cormorant Garamond"
+    },
+    "headings": [
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 1.5,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 11,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 93.6,
+      "vw": 24,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.09,
+      "leading": 0.73,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 311,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Une cuisine de saison.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1279,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "La sélection du moment",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 1659,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tomates anciennes & fleurs de basilic",
+      "words": 6,
+      "chars": 37,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2124,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Ravioles ouvertes aux herbes",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2646,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Poisson du jour, fenouil confit",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3138,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Le plaisir de ralentir.",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 44.8,
+      "vw": 11.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 3783,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Autour de la table",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 4239,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Votre prochaine belle table vous attend.",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 44.8,
+      "vw": 11.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5054,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nous serons heureux de vous accueillir.",
+      "words": 6,
+      "chars": 39,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 11.1,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 0.99,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5401,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Horaires",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5580,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "ÉCLAT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 120.9,
+      "vw": 31,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.07,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 6095,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.86,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.14,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      16,
+      18,
+      22,
+      27,
+      30,
+      32,
+      40,
+      43,
+      45,
+      94,
+      121
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.75,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 120.9,
+      "vw": 31,
+      "font": "Cormorant Garamond",
+      "text": "ÉCLAT"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f5f0e7",
+     "bodyBgHsl": {
+      "h": 39,
+      "s": 0.41,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#a9a18e",
+       "top": 121,
+       "hsl": {
+        "h": 42,
+        "s": 0.14,
+        "l": 0.61
+       }
+      },
+      {
+       "color": "#fffcf6",
+       "top": 1579,
+       "hsl": {
+        "h": 40,
+        "s": 1,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#ddd6c9",
+       "top": 1791,
+       "hsl": {
+        "h": 39,
+        "s": 0.23,
+        "l": 0.83
+       }
+      },
+      {
+       "color": "#26382d",
+       "top": 3454,
+       "hsl": {
+        "h": 143,
+        "s": 0.19,
+        "l": 0.18
+       }
+      },
+      {
+       "color": "#f5f0e7",
+       "top": 4159,
+       "hsl": {
+        "h": 39,
+        "s": 0.41,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#b99a62",
+       "top": 4949,
+       "hsl": {
+        "h": 39,
+        "s": 0.38,
+        "l": 0.55
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#171914",
+       "share": 0.28
+      },
+      {
+       "color": "#d1d0c8",
+       "share": 0.15
+      },
+      {
+       "color": "#77766f",
+       "share": 0.09
+      },
+      {
+       "color": "#55564e",
+       "share": 0.09
+      },
+      {
+       "color": "#fffcf6",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#f5f0e7",
+      "hsl": {
+       "h": 39,
+       "s": 0.41,
+       "l": 0.93
+      },
+      "fg": "#171914"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Aller au contenu",
+      "Découvrir le menu",
+      "Réserver une table"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.54
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 66,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "dm sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6861,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 66,
+      "height": 702,
+      "words": 27,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "ÉCLAT",
+       "size": 94,
+       "tag": "h1"
+      },
+      "left": 14,
+      "right": 14,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#histoire.intro-section.section-pad",
+      "tag": "section",
+      "top": 768,
+      "height": 811,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Une cuisine de saison.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.selection-section.section-pad",
+      "tag": "section",
+      "top": 1579,
+      "height": 1875,
+      "words": 90,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "La sélection du moment",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.experience-section",
+      "tag": "section",
+      "top": 3454,
+      "height": 705,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Le plaisir de ralentir.",
+       "size": 45,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 29,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.gallery-preview.section-pad",
+      "tag": "section",
+      "top": 4159,
+      "height": 790,
+      "words": 32,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Autour de la table",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.reservation-banner",
+      "tag": "section",
+      "top": 4949,
+      "height": 354,
+      "words": 9,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Votre prochaine belle table vous attend.",
+       "size": 45,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 26,
+      "textLeft": 26,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.practical.section-pad",
+      "tag": "section",
+      "top": 5303,
+      "height": 748,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nous serons heureux",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 6051,
+      "height": 810,
+      "words": 72,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "ÉCLAT",
+       "size": 121,
+       "tag": "a"
+      },
+      "left": 20,
+      "right": 38,
+      "textLeft": 20,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "ÉCLAT",
+      "size": 94,
+      "top": 311,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 17
+     },
+     {
+      "x": 74,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 18,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f5f0e7, section #fffcf6, section #f5f0e7).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (13, 14, 16, 18, 22, 29, 34, 58, 63, 65, 216, 351).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 15 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\desktop-page-01.jpg",
+    "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\mobile-page-01.jpg",
+    "C:\\Users\\Antonio\\Desktop\\Eclat\\.taste-skill\\before-images\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

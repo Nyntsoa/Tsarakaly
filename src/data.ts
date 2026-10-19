@@ -1,0 +1,36 @@
+﻿export type Category = 'Entrées' | 'Plats principaux' | 'Desserts' | 'Boissons'
+export type MenuItem = {
+  id: string; name: string; slug: string; description: string; price: number; category: Category
+  image_url: string; allergens: string[]; labels: string[]; is_available: boolean; sort_order: number
+}
+
+// Plats et tarifs de démonstration : à valider par le restaurant avant publication.
+export const demoMenu: MenuItem[] = [
+  { id: '1', name: 'Tomates anciennes & fleurs de basilic', slug: 'tomates-anciennes', description: 'Tomates de saison, crème légère de chèvre frais, huile verte.', price: 19, category: 'Entrées', image_url: 'https://picsum.photos/id/326/1200/900', allergens: ['Lait'], labels: ['Végétarien'], is_available: true, sort_order: 1 },
+  { id: '2', name: 'Ravioles ouvertes aux herbes', slug: 'ravioles-herbes', description: 'Pâte fraîche, ricotta, petits pois et bouillon clair aux herbes.', price: 24, category: 'Entrées', image_url: 'https://picsum.photos/id/292/1200/900', allergens: ['Gluten', 'Lait'], labels: ['Signature'], is_available: true, sort_order: 2 },
+  { id: '3', name: 'Poisson du jour, fenouil confit', slug: 'poisson-fenouil', description: 'Pêche du jour, fenouil doux, agrumes et jus de coquillages.', price: 38, category: 'Plats principaux', image_url: 'https://picsum.photos/id/225/1200/900', allergens: ['Poisson', 'Mollusques'], labels: ['Signature'], is_available: true, sort_order: 3 },
+  { id: '4', name: 'Aubergine rôtie au miso blond', slug: 'aubergine-miso', description: 'Aubergine fondante, sésame, riz croustillant et citron vert.', price: 29, category: 'Plats principaux', image_url: 'https://picsum.photos/id/488/1200/900', allergens: ['Sésame', 'Soja'], labels: ['Végétarien'], is_available: true, sort_order: 4 },
+  { id: '5', name: 'Volaille fermière, jus réduit', slug: 'volaille-jus', description: 'Volaille rôtie, légumes du moment et jus aux feuilles de sauge.', price: 36, category: 'Plats principaux', image_url: 'https://picsum.photos/id/208/1200/900', allergens: [], labels: [], is_available: true, sort_order: 5 },
+  { id: '6', name: 'Pêche blanche, verveine & amande', slug: 'peche-verveine', description: 'Fruit mûr, granité de verveine et biscuit aux amandes.', price: 15, category: 'Desserts', image_url: 'https://picsum.photos/id/102/1200/900', allergens: ['Fruits à coque', 'Gluten'], labels: ['Végétarien'], is_available: true, sort_order: 6 },
+  { id: '7', name: 'Chocolat noir & huile d’olive', slug: 'chocolat-huile', description: 'Crémeux au chocolat, huile fruitée et pointe de fleur de sel.', price: 16, category: 'Desserts', image_url: 'https://picsum.photos/id/1060/1200/900', allergens: ['Lait'], labels: [], is_available: true, sort_order: 7 },
+  { id: '8', name: 'Infusion glacée de saison', slug: 'infusion-glacee', description: 'Infusion maison, fruits frais et herbes du jardin.', price: 8, category: 'Boissons', image_url: 'https://picsum.photos/id/225/1200/900', allergens: [], labels: ['Sans alcool'], is_available: true, sort_order: 8 },
+]
+
+export const categories = ['Tous les plats', 'Entrées', 'Plats principaux', 'Desserts', 'Boissons'] as const
+export const gallery = [
+  { src: 'https://picsum.photos/id/625/1400/1100', alt: 'Table dressée près d’une fenêtre lumineuse', caption: 'La table, avant le premier service' },
+  { src: 'https://picsum.photos/id/326/1200/1000', alt: 'Assiette de saison préparée avec soin', caption: 'Le goût du produit' },
+  { src: 'https://picsum.photos/id/292/1200/1000', alt: 'Préparation culinaire aux herbes fraîches', caption: 'Les gestes du quotidien' },
+  { src: 'https://picsum.photos/id/208/1400/1100', alt: 'Lumière douce dans une salle de restaurant', caption: 'Une lumière de fin de journée' },
+  { src: 'https://picsum.photos/id/488/1200/1000', alt: 'Légumes de saison servis dans une assiette', caption: 'La saison dans l’assiette' },
+  { src: 'https://picsum.photos/id/225/1200/1000', alt: 'Détail d’une table et de son service', caption: 'Prendre le temps' },
+]
+
+// Informations d’exemple volontairement fictives. Remplacer par les informations réelles.
+export const restaurant = {
+  name: 'Tsarakaly', tagline: 'L’art de savourer l’instant.', description: 'Restaurant de saison aux assiettes guidées par le produit et le plaisir de se retrouver.',
+  address: 'Adresse de démonstration — à compléter', phone: '', email: '', currency: 'EUR', timezone: 'Indian/Antananarivo',
+  hours: [ ['Lundi', 'Fermé'], ['Mardi – vendredi', '12 h – 14 h · 19 h – 22 h'], ['Samedi', '12 h – 14 h 30 · 19 h – 22 h'], ['Dimanche', 'Fermé'] ],
+  openingHours: { '2': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '3': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '4': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '5': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'], '6': ['12:00','12:30','13:00','13:30','19:00','19:30','20:00','20:30','21:00'] },
+  closedDays: [0, 1], maxPartySize: 8,
+}

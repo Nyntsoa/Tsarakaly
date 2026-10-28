@@ -1169,7 +1169,7 @@ textarea:focus-visible {
     padding-bottom: 18px;
   }
   .hero-image {
-    inset: 64px var(--margin) 150px;
+    inset: 64px var(--margin) 182px;
   }
   .hero-wordmark {
     font-size: 24vw;

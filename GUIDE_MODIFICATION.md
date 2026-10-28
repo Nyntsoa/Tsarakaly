@@ -3,7 +3,8 @@
 ## O? modifier le site
 
 - `index.html` contient le document HTML de d?part et les points o? l'application s'affiche.
-- `src/app.js` construit les pages en HTML et g?re les liens, filtres, formulaires, galerie et administration.
+- `src/app.js` gère l’état, la navigation, les formulaires et les interactions.
+- `src/views.js` construit le HTML des pages, de l’en-tête et du pied de page.
 - `src/data.js` centralise les textes de marque, coordonn?es, horaires, cr?neaux, plats, photos et galerie.
 - `src/styles.css` contient les styles et les r?gles pour mobile. Les couleurs sont d?finies en variables CSS au d?but du fichier.
 - `src/lib/` contient les fonctions de dates, r?servation, menu et connexion Supabase.

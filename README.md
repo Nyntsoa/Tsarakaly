@@ -1,6 +1,6 @@
 # Tsarakaly ? site de restaurant
 
-Site de restaurant construit en HTML, CSS et JavaScript natifs. Le point d'entr?e HTML est `index.html`; les pages et interactions sont g?r?es par `src/app.js`. Vite sert le site en d?veloppement et injecte les variables publiques Supabase ? la compilation. Les images et informations affich?es sans configuration sont des exemples fictifs.
+Site de restaurant construit en HTML, CSS et JavaScript natifs. `index.html` est le point d’entrée; `src/app.js` gère la navigation et les interactions, tandis que `src/views.js` construit les pages. Vite sert le site en développement et injecte les variables publiques Supabase à la compilation. Sans configuration, le contenu affiché est un exemple.
 
 ## D?marrer
 
@@ -17,7 +17,8 @@ Sans variables Supabase, la carte utilise `src/data.js` et les demandes de r?ser
 
 - `src/data.js` : nom, coordonn?es, horaires, cr?neaux, plats, images et galerie.
 - `src/styles.css` : couleurs, styles des pages et adaptations mobiles.
-- `src/app.js` : structure HTML des pages, navigation et interactions.
+- `src/app.js` : état de l’application, navigation et interactions.
+- `src/views.js` : HTML des pages, de l’en-tête et du pied de page.
 - `src/lib/` : services Supabase, menu, dates et r?servations.
 - `supabase/migrations/` : sch?ma SQL et politiques d'acc?s.
 

@@ -5,7 +5,7 @@ import { demoMenu, gallery, restaurant } from './data.js'
 import { getWeekday } from './lib/dates.js'
 import { loadMenu } from './lib/menu.js'
 import { createReservation, validateReservation } from './lib/reservations.js'
-import { isSupabaseConfigured, supabase } from './lib/supabase.js'
+import { supabase } from './lib/supabase.js'
 import {
   escapeHtml,
   renderFooterMarkup,
@@ -146,6 +146,7 @@ function navigate(path) {
 
 async function loadMenuData() {
   state.menuLoading = true
+  state.menuError = ''
   try {
     state.menu = await loadMenu()
   } catch {
@@ -267,6 +268,106 @@ async function handleReservationSubmit(form) {
       button.disabled = false
       button.textContent = 'Envoyer ma demande'
     }
+  }
+}
+
+function handleContactSubmit(form) {
+  if (!form.reportValidity() || !restaurant.email) return
+
+  const values = Object.fromEntries(new FormData(form).entries())
+  const body = encodeURIComponent(
+    `De : ${values.name} (${values.email})\n\n${values.message}`,
+  )
+  window.location.href = `mailto:${restaurant.email}?subject=${encodeURIComponent(values.subject)}&body=${body}`
+  form.querySelector('button').textContent = 'Message préparé'
+}
+
+async function handleAdminLoginSubmit(form) {
+  const values = Object.fromEntries(new FormData(form).entries())
+  const { error } = await supabase.auth.signInWithPassword({
+    email: values.email,
+    password: values.password,
+  })
+
+  if (error) {
+    state.adminError = 'Connexion refusée. Vérifiez vos identifiants.'
+    render()
+  }
+}
+
+async function handleAdminItemSubmit(form) {
+  const values = Object.fromEntries(new FormData(form).entries())
+  const slug = values.name
+    .toLocaleLowerCase('fr')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+  const item = {
+    ...state.editItem,
+    ...values,
+    slug,
+    price: Number(values.price),
+    sort_order: Number(values.sort_order),
+    allergens: values.allergens
+      .split(',')
+      .map((part) => part.trim())
+      .filter(Boolean),
+    labels: values.labels
+      .split(',')
+      .map((part) => part.trim())
+      .filter(Boolean),
+    is_available: form.elements.is_available.checked,
+  }
+  const { id, ...payload } = item
+  const result = id
+    ? await supabase.from('menu_items').update(payload).eq('id', id)
+    : await supabase.from('menu_items').insert(payload)
+
+  if (result.error) {
+    state.adminError = 'Le plat n’a pas pu être enregistré.'
+  } else {
+    state.editItem = null
+    await loadAdminData()
+  }
+  render()
+}
+
+async function handleSettingsSubmit(form) {
+  const values = Object.fromEntries(new FormData(form).entries())
+  const message = form.querySelector('[data-settings-message]')
+
+  try {
+    const payload = {
+      restaurant_name: values.restaurant_name,
+      description: values.description,
+      address: values.address,
+      phone: values.phone,
+      email: values.email,
+      currency: values.currency,
+      max_party_size: Number(values.max_party_size),
+      max_guests_per_slot: Number(values.max_guests_per_slot),
+      opening_hours: JSON.parse(values.opening_hours),
+      closed_days: values.closed_days
+        .split(',')
+        .map((day) => Number(day.trim()))
+        .filter((day) => Number.isInteger(day) && day >= 0 && day <= 6),
+    }
+    const { error } = await supabase
+      .from('restaurant_settings')
+      .update(payload)
+      .eq('id', 1)
+
+    message.textContent = error
+      ? 'Échec de l’enregistrement.'
+      : 'Paramètres enregistrés.'
+    if (!error) {
+      await loadPublicSettings()
+      renderSiteChrome()
+    }
+  } catch {
+    message.textContent =
+      'Le format des horaires doit être un objet JSON valide.'
   }
 }
 
@@ -429,104 +530,31 @@ document.addEventListener('change', (event) => {
 document.addEventListener('submit', async (event) => {
   const form = event.target
   if (!(form instanceof HTMLFormElement)) return
+
   if (form.id === 'reservation-form') {
     event.preventDefault()
     if (!form.reportValidity()) return
     await handleReservationSubmit(form)
+    return
   }
   if (form.id === 'contact-form') {
     event.preventDefault()
-    if (!form.reportValidity() || !restaurant.email) return
-    const values = Object.fromEntries(new FormData(form).entries())
-    const body = encodeURIComponent(
-      `De : ${values.name} (${values.email})\n\n${values.message}`,
-    )
-    window.location.href = `mailto:${restaurant.email}?subject=${encodeURIComponent(values.subject)}&body=${body}`
-    form.querySelector('button').textContent = 'Message préparé'
+    handleContactSubmit(form)
+    return
   }
   if (form.id === 'admin-login') {
     event.preventDefault()
-    const values = Object.fromEntries(new FormData(form).entries())
-    const { error } = await supabase.auth.signInWithPassword({
-      email: values.email,
-      password: values.password,
-    })
-    if (error) {
-      state.adminError = 'Connexion refusée. Vérifiez vos identifiants.'
-      render()
-    }
+    await handleAdminLoginSubmit(form)
+    return
   }
   if (form.id === 'admin-item-form') {
     event.preventDefault()
-    const values = Object.fromEntries(new FormData(form).entries())
-    const slug = values.name
-      .toLocaleLowerCase('fr')
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '')
-    const item = {
-      ...state.editItem,
-      ...values,
-      slug,
-      price: Number(values.price),
-      sort_order: Number(values.sort_order),
-      allergens: values.allergens
-        .split(',')
-        .map((part) => part.trim())
-        .filter(Boolean),
-      labels: values.labels
-        .split(',')
-        .map((part) => part.trim())
-        .filter(Boolean),
-      is_available: form.elements.is_available.checked,
-    }
-    const { id, ...payload } = item
-    const result = id
-      ? await supabase.from('menu_items').update(payload).eq('id', id)
-      : await supabase.from('menu_items').insert(payload)
-    if (result.error) state.adminError = 'Le plat n’a pas pu être enregistré.'
-    else {
-      state.editItem = null
-      await loadAdminData()
-    }
-    render()
+    await handleAdminItemSubmit(form)
+    return
   }
   if (form.id === 'settings-form') {
     event.preventDefault()
-    const values = Object.fromEntries(new FormData(form).entries())
-    const message = form.querySelector('[data-settings-message]')
-    try {
-      const payload = {
-        restaurant_name: values.restaurant_name,
-        description: values.description,
-        address: values.address,
-        phone: values.phone,
-        email: values.email,
-        currency: values.currency,
-        max_party_size: Number(values.max_party_size),
-        max_guests_per_slot: Number(values.max_guests_per_slot),
-        opening_hours: JSON.parse(values.opening_hours),
-        closed_days: values.closed_days
-          .split(',')
-          .map((day) => Number(day.trim()))
-          .filter((day) => Number.isInteger(day) && day >= 0 && day <= 6),
-      }
-      const { error } = await supabase
-        .from('restaurant_settings')
-        .update(payload)
-        .eq('id', 1)
-      message.textContent = error
-        ? 'Échec de l’enregistrement.'
-        : 'Paramètres enregistrés.'
-      if (!error) {
-        await loadPublicSettings()
-        renderSiteChrome()
-      }
-    } catch {
-      message.textContent =
-        'Le format des horaires doit être un objet JSON valide.'
-    }
+    await handleSettingsSubmit(form)
   }
 })
 

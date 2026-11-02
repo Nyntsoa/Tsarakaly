@@ -30,14 +30,16 @@ export const demoMenu = [
   },
   {
     id: '3',
-    name: 'Poisson du jour, fenouil confit',
-    slug: 'poisson-fenouil',
-    description: 'Pêche du jour, fenouil doux, agrumes et jus de coquillages.',
-    price: 38,
+    name: 'Ravitoto traditionnel Malagasy',
+    slug: 'ravitoto-traditionnel-malagasy',
+    description:
+      'Feuilles de manioc pilées mijotées au porc, riz blanc et lasary tomate.',
+    price: 20000,
+    currency: 'MGA',
     category: 'Plats principaux',
     image_url: '/images/ravitoto.jpg',
-    allergens: ['Poisson', 'Mollusques'],
-    labels: ['Signature'],
+    allergens: ['À préciser selon les ingrédients'],
+    labels: ['Spécialité Malagasy'],
     is_available: true,
     sort_order: 3,
   },
@@ -117,8 +119,8 @@ export const categories = [
   'Boissons',
 ]
 export const siteImages = {
-  hero: '/images/ravitoto.jpg',
-  introduction: '/images/mofo-gasy.jpg',
+  hero: '/images/hero.jpg',
+  introduction: '/images/cafe.jpg',
   experience: '/images/pakopako.jpg',
   story: '/images/mofosakay.jpg',
   storyDetail: '/images/triangle.jpg',

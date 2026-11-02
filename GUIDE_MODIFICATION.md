@@ -1,27 +1,31 @@
-# Guide de modification ? Tsarakaly
+# Guide de modification — Tsarakaly
 
-## O? modifier le site
+## Où modifier le site
 
-- `index.html` contient le document HTML de d?part et les points o? l'application s'affiche.
-- `src/app.js` gère l’état, la navigation, les formulaires et les interactions.
-- `src/views.js` construit le HTML des pages, de l’en-tête et du pied de page.
-- `src/data.js` centralise les textes de marque, coordonn?es, horaires, cr?neaux, plats, photos et galerie.
-- `src/styles.css` contient les styles et les r?gles pour mobile. Les couleurs sont d?finies en variables CSS au d?but du fichier.
-- `src/lib/` contient les fonctions de dates, r?servation, menu et connexion Supabase.
-- `supabase/migrations/` contient la d?finition de la base et ses r?gles d'acc?s.
+- `index.html` : document HTML de départ et liens vers les styles et le script principal.
+- `src/app.js` : état de l’application, navigation, chargement des données et interactions.
+- `src/views.js` : affichage HTML de l’accueil, du menu, de la galerie, des formulaires et de l’administration.
+- `src/data.js` : identité du restaurant, horaires, plats, images et galerie de démonstration.
+- `src/styles.css` : couleurs, mise en page, composants et règles pour mobile.
+- `src/lib/dates.js` : calcul des dates et jours de semaine.
+- `src/lib/menu.js` : chargement et filtrage de la carte.
+- `src/lib/reservations.js` : validation et enregistrement des demandes de réservation.
+- `src/lib/supabase.js` : connexion facultative à Supabase.
+- `supabase/migrations/` : tables, fonctions et règles d’accès de la base.
+- `public/` : images et fichiers statiques. Dans `src/data.js`, utilisez un chemin comme `/images/ravitoto.jpg` pour un fichier placé dans `public/images/ravitoto.jpg`.
 
-## Modifier les informations
+## Modifier les informations du restaurant
 
-En mode d?mo, modifiez l'objet `restaurant`, la liste `demoMenu`, `siteImages` ou `gallery` dans `src/data.js`. Les cl?s `openingHours` vont de `0` (dimanche) ? `6` (samedi), avec les horaires au format `HH:MM`. `closedDays` contient les jours ferm?s.
+En mode démonstration, modifiez l’objet `restaurant`, la liste `demoMenu`, l’objet `siteImages` ou la liste `gallery` dans `src/data.js`. Les jours de la semaine utilisent les nombres JavaScript : `0` pour dimanche et `6` pour samedi. Les créneaux sont au format `HH:MM`.
 
-Avec Supabase configur?, `restaurant_settings` fournit les informations publiques. Le RPC `create_reservation` v?rifie aussi les r?gles de r?servation c?t? base.
+Avec Supabase configuré, les paramètres publics et la carte proviennent de la base. Les réservations passent par la fonction SQL `create_reservation`, qui vérifie les horaires, la capacité et les jours de fermeture avant l’enregistrement.
 
-## Commandes
+## Commandes utiles
 
 ```sh
 npm run dev
-npm run test
+npm test
 npm run build
 ```
 
-Vite est conserv? pour le serveur local, le build statique et l'injection des variables d'environnement Supabase. L'interface n'utilise plus React ni TypeScript.
+Vite fournit le serveur local et construit la version statique. Vitest exécute les tests des règles de dates, de réservation et de filtrage de la carte.
